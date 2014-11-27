@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<openerp>
+        <data>
+                <record model='ir.ui.view' id='giro_view_partner_form'>
+                        <field name='name'>res.partner.giro.form</field>
+                        <field name='model'>res.partner</field>
+                        <field name='inherit_id' ref='base.view_partner_form'/>
+						<field name='type'>form</field>
+                        <field name='arch' type='xml'>
+							<field name='mobile' position="after">
+								<field name="gironegocio_id"  widget="many2one_tags" placeholder="Giro de Negocio"/> 
+							</field>
+                        </field>
+                </record>				
+        </data>
+</openerp>
+                                                         
